@@ -21,3 +21,7 @@ def index():
         flash("You message have been send to the world!")
         return redirect(url_for('index'))
     return render_template('index.html', form=form, messages=messages)
+
+
+if __name__ == '__main__':
+    app.run()
